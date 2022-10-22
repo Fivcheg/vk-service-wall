@@ -1,14 +1,14 @@
 package ru.netology
 
 data class Post(
-    val id: Int,
-    val fromId: Int,
-    val date: Long,
-    val text: String,
-    val likes: Int,
-    val views: Int,
-    val canEdit: Boolean,
-    val canDelete: Boolean,
-    val isFavorite: Boolean,
-    val postType: String
+    val id: Int = 0,
+    val fromId: Int = 0,
+    val date: Long = 0,
+    val text: String = "",
+    val likes: Int = 0,
+    val views: Int = 0,
+    val canEdit: Boolean = false,
+    val canDelete: Boolean = false,
+    val isFavorite: Boolean = false,
+    val postType: String  = ""
 )
