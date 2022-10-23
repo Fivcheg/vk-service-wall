@@ -5,14 +5,19 @@ import kotlin.random.Random
 
 object WallService {
     private var posts = emptyArray<Post>()
-    //private var idCounter = 0
+    private var idCounter = 0
     fun clear() {
         posts = emptyArray()
     }
-    fun add(post: Post): Post {
-        //idCounter++
-        posts += post
-        return posts.last()
+    fun add(post: Post): Boolean {
+        var x = true
+        if (post.id == idCounter){
+            posts += post
+            idCounter++
+        } else{
+            x = false
+        }
+          return x
     }
 
     fun update(id: Int): Boolean {
@@ -33,7 +38,6 @@ object WallService {
         }
         return x
     }
-
     fun getPostById(indexPost:Int):Post{
         return posts[indexPost]
     }
