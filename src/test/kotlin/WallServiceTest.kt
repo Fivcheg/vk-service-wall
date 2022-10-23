@@ -4,11 +4,12 @@ import junit.framework.TestCase.assertTrue
 import org.junit.Before
 import org.junit.Test
 
+
 class WallServiceTest {
-    @Before
+   /* @Before
     fun clearBeforeTest() {
         WallService.clear()
-    }
+    }*/
     @Test
     fun updateExistingTrue() {
         val service = WallService
