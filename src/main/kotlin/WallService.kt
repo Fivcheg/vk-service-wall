@@ -8,16 +8,11 @@ object WallService {
     private var idCounter = 0
     fun clear() {
         posts = emptyArray()
+        idCounter = 0
     }
-    fun add(post: Post): Boolean {
-        var x = true
-        if (post.id == idCounter){
-            posts += post
-            idCounter++
-        } else{
-            x = false
-        }
-          return x
+    fun add(post: Post): Post {
+        posts += post.copy(id = idCounter++)
+        return posts.last()
     }
 
     fun update(id: Int): Boolean {
