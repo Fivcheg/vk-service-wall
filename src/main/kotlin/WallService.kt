@@ -23,6 +23,7 @@ object WallService {
                     likes = post.likes + Random.nextInt(from = 1, until = 150),
                     text = post.text + " изменен " + Calendar.getInstance().time,
                     views = post.views + Random.nextInt(from = 1, until = 250),
+                    description = "Какой-то небольшой текст",
                     canEdit = true,
                     canDelete = true,
                     isFavorite = true,

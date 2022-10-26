@@ -7,6 +7,7 @@ data class Post(
     val text: String = "",
     val likes: Int = 0,
     val views: Int = 0,
+    val description: String?,
     val canEdit: Boolean = false,
     val canDelete: Boolean = false,
     val isFavorite: Boolean = false,
