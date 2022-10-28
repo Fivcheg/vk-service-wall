@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="643dc4cc-6b48-4403-a09e-e7f3d1413fd2" name="Changes" comment="Task 2.3.1">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Attachment.kt" afterDir="false" />
+    <list default="true" id="643dc4cc-6b48-4403-a09e-e7f3d1413fd2" name="Changes" comment="Task 2.3.2, add system attachments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Attachment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Attachment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Post.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Post.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/WallService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/WallService.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +76,7 @@
       <command value="gradle :jacocoTestReport" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.WallServiceTest">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="WallServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -201,8 +199,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.WallServiceTest" />
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.WallServiceTest" />
         <item itemvalue="Gradle.WallServiceTest.updateExistingTrue" />
         <item itemvalue="Gradle.WallServiceTest.addExisting" />
         <item itemvalue="Gradle.WallServiceTest.addTestFalse" />
@@ -295,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666805757284</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Task 2.3.2, add system attachments">
+      <created>1666974972481</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1666974972481</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -321,7 +326,8 @@
     <MESSAGE value="Delete @Before" />
     <MESSAGE value="Changed: autotests, fun clear, fun add" />
     <MESSAGE value="Task 2.3.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 2.3.1" />
+    <MESSAGE value="Task 2.3.2, add system attachments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 2.3.2, add system attachments" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
