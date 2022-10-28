@@ -15,6 +15,7 @@ object WallService {
         return posts.last()
     }
 
+
     fun update(id: Int): Boolean {
         var x = false
         for ((index, post) in posts.withIndex()) {

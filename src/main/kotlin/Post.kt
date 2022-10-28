@@ -11,5 +11,6 @@ data class Post(
     val canEdit: Boolean = false,
     val canDelete: Boolean = false,
     val isFavorite: Boolean = false,
-    val postType: String  = ""
+    val postType: String  = "",
+    val attachments: Array<Attachment> = emptyArray()
 )
