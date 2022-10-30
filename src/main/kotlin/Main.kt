@@ -13,13 +13,15 @@ fun main() {
     WallService.add(Post(5, 131, 21091990,"Иван Васильевич меняет профессию", like1.count, 10, "Текст1",false, true, false, "reply"))
 
     WallService.update(2)
-
+    println(WallService.createComment(3, Comment(3, 66, 12314, "Первый коммент", 33)))
+    println(WallService.createComment(13, Comment(13, 66, 12314, "Первый коммент", 33)))
     try {
         println(WallService.getPostById(2))
     }
     catch(e:ArrayIndexOutOfBoundsException){
-        println("Вне диапазона")
+        println("Нет такого поста")
     }
-    println(audio1.type)
+        //println(audio1.type)
+
 }
 

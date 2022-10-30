@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="643dc4cc-6b48-4403-a09e-e7f3d1413fd2" name="Changes" comment="Task 2.3.2, add system attachments">
+    <list default="true" id="643dc4cc-6b48-4403-a09e-e7f3d1413fd2" name="Changes" comment="Task 2.3.3, sealed classes">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Comment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Attachment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Attachment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/WallService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/WallService.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666974972481</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Task 2.3.3, sealed classes">
+      <created>1666980459808</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1666980459808</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -327,7 +335,8 @@
     <MESSAGE value="Changed: autotests, fun clear, fun add" />
     <MESSAGE value="Task 2.3.1" />
     <MESSAGE value="Task 2.3.2, add system attachments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 2.3.2, add system attachments" />
+    <MESSAGE value="Task 2.3.3, sealed classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 2.3.3, sealed classes" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
