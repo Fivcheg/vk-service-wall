@@ -8,28 +8,25 @@ object WallService {
     private var idCounter = 0
     private var idCounterComment = 0
     private var comments = emptyArray<Comment>()
-
-    fun createComment(postId: Int, comment: Comment): Comment? {
-        var varComment: Comment? = null
-        try {
-            for (post in posts) {
-                if (postId == post.id) {
-                    comments += comment.copy(id = idCounterComment++)
-                    varComment = comments.last()
-                    break
-                }
-            }
-        } catch (e: Exception) {
-            throw IllegalArgumentException("Пост не найден")
-            varComment = null
-        }
-        return varComment
-    }
-
     fun clear() {
         posts = emptyArray()
+        comments = emptyArray()
         idCounter = 0
     }
+    fun createComment(postId: Int, comment: Comment): Comment? {
+        var varComment: Comment? = null
+        for (post in posts) {
+            if (postId == post.id) {
+                comments += comment.copy(id = idCounterComment++)
+                varComment = comments.last()
+                break
+            } else {
+                varComment = null
+            }
+        }
+        return varComment ?: throw IllegalArgumentException("Пост не найден") //PostNotFoundException
+    }
+
     fun add(post: Post): Post {
         posts += post.copy(id = idCounter++)
         return posts.last()
