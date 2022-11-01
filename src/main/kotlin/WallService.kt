@@ -13,6 +13,7 @@ object WallService {
         comments = emptyArray()
         idCounter = 0
     }
+    class PostNotFoundException : Exception("Пост не найден!")
     fun createComment(postId: Int, comment: Comment): Comment? {
         var varComment: Comment? = null
         for (post in posts) {
@@ -20,11 +21,9 @@ object WallService {
                 comments += comment.copy(id = idCounterComment++)
                 varComment = comments.last()
                 break
-            } else {
-                varComment = null
             }
         }
-        return varComment ?: throw IllegalArgumentException("Пост не найден") //PostNotFoundException
+        return varComment ?: throw PostNotFoundException()
     }
 
     fun add(post: Post): Post {
